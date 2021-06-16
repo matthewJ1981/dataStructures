@@ -1,0 +1,24 @@
+
+0 1 2 3 4 5 6 7 8 9
+
+0 1 2
+3 4 5
+6 7 8
+9 x x
+
+horizontal left to right
+	wordLength <= puzzleWidth - i
+horizontal right to left
+	i + 1 >= wordLength
+vertical up to down
+	wordLength <= puzzleHeight - j
+vertical down to up
+	j + 1 >= wordLength
+diagonal left to right up to down
+	wordLength <= puzzleWidth - i  || wordLength <= puzzleHeight - j
+diagonal left to right down to up
+	wordLength <= puzzleWidth - i || wordLength <= puzzleHeight - j
+diagonal right to left up to down
+	i + 1 >= wordLength || wordLength <= puzzleHeight - j
+diagonal right to left down to up
+	i + 1 >= wordLength || j + 1 >= wordLength
