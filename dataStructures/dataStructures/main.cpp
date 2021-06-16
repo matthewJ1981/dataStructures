@@ -5,6 +5,8 @@
 extern int select(std::vector<int>, int k);
 //Find words in word list (CH1EX2)
 extern std::vector<std::vector<std::pair<size_t, size_t>>> findWord(std::vector<char>&, size_t width, std::vector<std::string>&);
+//Print double one digit at a time (CH1EX3)
+extern void printOut(double d);
 
 int main()
 {
@@ -27,6 +29,9 @@ int main()
 
 	//}
 	//std::cout << "\n";
+
+	// Chapter 1 Exercise 3 Driver
+	//printOut(3465.789);
 }
 
 
