@@ -7,8 +7,12 @@ extern int select(std::vector<int>, int k);
 extern std::vector<std::vector<std::pair<size_t, size_t>>> findWord(std::vector<char>&, size_t width, std::vector<std::string>&);
 //Print double one digit at a time (CH1EX3)
 extern void printOut(double d);
-//Print the number of 1s in a binary represenation of N
+//Print the number of 1s in a binary represenation of N  (CH1EX5)
 extern int numOnes(int n);
+//Permutation of characters in string driver  (CH1EX6)
+extern void permute(const std::string& str);
+//Permutation of character in string (CH1EX6)
+extern void permute(const std::string& str, int low, int high);
 
 int main()
 {
@@ -36,14 +40,16 @@ int main()
 	//printOut(3465.789);
 
 	//Chapter 1 Exercise 5 Driver
-	std::cout << numOnes(1) << "\n";
-	std::cout << numOnes(2) << "\n";
-	std::cout << numOnes(3) << "\n";
-	std::cout << numOnes(4) << "\n";
-	std::cout << numOnes(5) << "\n";
-	std::cout << numOnes(6) << "\n";
-	std::cout << numOnes(7) << "\n";
-	std::cout << numOnes(8) << "\n";
+	//std::cout << numOnes(1) << "\n";
+	//std::cout << numOnes(2) << "\n";
+	//std::cout << numOnes(3) << "\n";
+	//std::cout << numOnes(4) << "\n";
+	//std::cout << numOnes(5) << "\n";
+	//std::cout << numOnes(6) << "\n";
+	//std::cout << numOnes(7) << "\n";
+	//std::cout << numOnes(8) << "\n";
+
+	permute("abcd");
 
 }
 
